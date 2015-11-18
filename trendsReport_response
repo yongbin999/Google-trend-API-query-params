@@ -1,0 +1,2160 @@
+<!-- This tag handles the report titles component -->
+
+<script type="text/javascript">
+  
+
+  function setTitle() {
+    document.title = 'Google Trends' +
+        ' -  Web Search interest: salt - Worldwide, 2004 - present';
+  }
+  
+  window.setTimeout(setTitle, 0);
+</script>
+
+<script type="text/javascript">
+    
+    controlPanel.setBBMsg(
+        "Less than 25% percent of searches for \74b\76 \47salt\47 \74/b\76 belonged in the Food \46 Drink category. \74a href\75\47//support.google.com/trends/bin/answer.py?hl\75en-US\46answer\7599586\47\76 Learn more \74/a\076");
+  </script>
+<div id="categorySuggestContent">
+<div class="category-suggest-wrap">
+    <div class="category-suggest-container">
+      <span class="category-suggest-title">
+        Recommended categories in Food & Drink:</span>
+<div class="category-suggest-item">
+        <a href="#cmpt=q&q=salt&cat=0-71-122"
+           onclick="trends.CategorySuggest.onClick('Cooking \46 Recipes')">
+           <span class="category-suggest-item-content">Cooking & Recipes</span>
+        </a>
+      </div>
+<div class="category-suggest-item">
+        <a href="#cmpt=q&q=salt&cat=0-71-276"
+           onclick="trends.CategorySuggest.onClick('Restaurants')">
+           <span class="category-suggest-item-content">Restaurants</span>
+        </a>
+      </div>
+<div class="category-suggest-item">
+        <a href="#cmpt=q&q=salt&cat=0-71-906"
+           onclick="trends.CategorySuggest.onClick('Candy \46 Sweets')">
+           <span class="category-suggest-item-content">Candy & Sweets</span>
+        </a>
+      </div>
+</div>
+  </div>
+</div>
+<script type="text/javascript">
+  trends.Utils.moveElement('categorySuggestContent', 'categorySuggest');
+</script>
+<div id="share-button-container" class="share-button-container" data-shareUrl='http%3A%2F%2Fwww.google.com%2Ftrends%2Fexplore%3Fhl%3Den-US%26cat%3D0-71%26q%3Dsalt%26cmpt%3Dq%26tz%3DEtc%2FGMT%252B5%26tz%3DEtc%2FGMT%252B5%26content%3D1' data-twitterShareTitle='Google%20Trends%20-%20Web%20Search%20interest%3A%20salt%20-%20Worldwide%2C%202004%20-%20present' data-twitterHashTag='googletrendsexplore' data-idForTracking='explore_share'><div class="share-menu" role="menu"></div><div class="share-button-anchor" aria-label="Share" aria-expanded="false" aria-haspopup="true" tabindex="0" title="Share"><div id="share-button-img" class="share-button-img SPRITE_share_icon"></div><div class="share-button-element share-button-icon" aria-label="Share"></div></div></div><div id="report">
+  <div id="reportMain">
+    <div class="timeSection">
+  <div class="primaryBand timeBand">
+  <div class="timeBandTitle">
+    <span class="title-content">
+      Interest over time</span>
+    <div class="timeBandTooltip trendsBandTooltip">
+      <div id="timeBand_tip_a" class="tooltip-icon"><div class="SPRITE_help"></div></div><div id="timeBand_tip_c" class="tooltip-content tooltip-box"><div class="tooltip-message" id="timeBand_tip_msg">Numbers represent search interest relative to the highest point on the chart. If at most 10% of searches for the given region and time frame were for "pizza," we'd consider this 100. This doesn't convey absolute search volume. <a href="//support.google.com/trends/bin/answer.py?hl=en-US&answer=87285">Learn more</a></div></div><script type="text/javascript">new trends.Tooltip('timeBand_tip_a', 'timeBand_tip_c',undefined,undefined);</script></div>
+    <div class="timeBandCheckboxMenus">
+      <script type="text/javascript">
+
+var TimeBand_forecast_listeners = [];
+var TimeBand_forecast_checkbox_checked = "false";
+
+TimeBand_forecast_register = function(listenerFunc) {
+  TimeBand_forecast_listeners.push(listenerFunc);
+}
+
+function TimeBand_forecast_checkbox_changed() {
+  var current = JfkUtils.isChecked(TimeBand_forecast_checkbox_checkbox);
+  
+  if (current != TimeBand_forecast_checkbox_checked) {
+    TimeBand_forecast_checkbox_checked = current;
+    for(var i = 0; i < TimeBand_forecast_listeners.length; i++) {
+      TimeBand_forecast_listeners[i](current);
+    }
+    
+      trends.PageTracker.analyticsTrackEvent('toggle forecast vis.',
+          'Forecast');
+    
+  }
+}
+</script>
+
+<div class="timeBandCheckboxMenu">
+  <span id="TimeBand_forecast_checkbox" style="vertical-align: middle;"></span>
+  <span id="TimeBand_forecast_checkbox_label" style="vertical-align: middle;">Forecast</span>
+  <script type="text/javascript">
+    var TimeBand_forecast_checkbox_checkbox = JfkUtils.createCheckbox('TimeBand_forecast_checkbox',
+        'TimeBand_forecast_checkbox_label', true, false, TimeBand_forecast_checkbox_changed);
+  </script>
+  <div class="forecast-tooltip">
+    <div id="TimeBand_forecast_checkbox_tip_a" class="tooltip-icon"><div class="SPRITE_help"></div></div><div id="TimeBand_forecast_checkbox_tip_c" class="tooltip-content tooltip-box"><div class="tooltip-message" id="TimeBand_forecast_checkbox_tip_msg">Forecasts are extrapolations of past values. <a href='//support.google.com/trends/bin/answer.py?hl=en-US&answer=150698'> Learn more </a></div></div><script type="text/javascript">new trends.Tooltip('TimeBand_forecast_checkbox_tip_a', 'TimeBand_forecast_checkbox_tip_c','true',undefined);</script></div>
+  </div>
+<script type="text/javascript">
+
+var TimeBand_headlines_listeners = [];
+var TimeBand_headlines_checkbox_checked = "false";
+
+TimeBand_headlines_register = function(listenerFunc) {
+  TimeBand_headlines_listeners.push(listenerFunc);
+}
+
+function TimeBand_headlines_checkbox_changed() {
+  var current = JfkUtils.isChecked(TimeBand_headlines_checkbox_checkbox);
+  
+  if (current != TimeBand_headlines_checkbox_checked) {
+    TimeBand_headlines_checkbox_checked = current;
+    for(var i = 0; i < TimeBand_headlines_listeners.length; i++) {
+      TimeBand_headlines_listeners[i](current);
+    }
+    
+      trends.PageTracker.analyticsTrackEvent('toggle news vis.',
+          'News headlines');
+    
+  }
+}
+</script>
+
+<div class="timeBandCheckboxMenu">
+  <span id="TimeBand_headlines_checkbox" style="vertical-align: middle;"></span>
+  <span id="TimeBand_headlines_checkbox_label" style="vertical-align: middle;">News headlines</span>
+  <script type="text/javascript">
+    var TimeBand_headlines_checkbox_checkbox = JfkUtils.createCheckbox('TimeBand_headlines_checkbox',
+        'TimeBand_headlines_checkbox_label', false, false, TimeBand_headlines_checkbox_changed);
+  </script>
+  <div class="forecast-tooltip">
+    <div id="TimeBand_headlines_checkbox_tip_a" class="tooltip-icon"><div class="SPRITE_help"></div></div><div id="TimeBand_headlines_checkbox_tip_c" class="tooltip-content tooltip-box"><div class="tooltip-message" id="TimeBand_headlines_checkbox_tip_msg">News headlines are unavailable for specific categories.</div></div><script type="text/javascript">new trends.Tooltip('TimeBand_headlines_checkbox_tip_a', 'TimeBand_headlines_checkbox_tip_c','true',undefined);</script></div>
+  </div>
+<script type="text/javascript">
+
+var TimeBand_cat_listeners = [];
+var TimeBand_cat_checkbox_checked = "false";
+
+TimeBand_cat_register = function(listenerFunc) {
+  TimeBand_cat_listeners.push(listenerFunc);
+}
+
+function TimeBand_cat_checkbox_changed() {
+  var current = JfkUtils.isChecked(TimeBand_cat_checkbox_checkbox);
+  
+  if (current != TimeBand_cat_checkbox_checked) {
+    TimeBand_cat_checkbox_checked = current;
+    for(var i = 0; i < TimeBand_cat_listeners.length; i++) {
+      TimeBand_cat_listeners[i](current);
+    }
+    
+      trends.PageTracker.analyticsTrackEvent('toggle vertical graph vis.',
+          'Compare to category');
+    
+  }
+}
+</script>
+
+<div class="timeBandCheckboxMenu">
+  <span id="TimeBand_cat_checkbox" style="vertical-align: middle;"></span>
+  <span id="TimeBand_cat_checkbox_label" style="vertical-align: middle;">Compare to category</span>
+  <script type="text/javascript">
+    var TimeBand_cat_checkbox_checkbox = JfkUtils.createCheckbox('TimeBand_cat_checkbox',
+        'TimeBand_cat_checkbox_label', true, false, TimeBand_cat_checkbox_changed);
+  </script>
+  <div class="forecast-tooltip">
+    <div id="TimeBand_cat_checkbox_tip_a" class="tooltip-icon"><div class="SPRITE_help"></div></div><div id="TimeBand_cat_checkbox_tip_c" class="tooltip-content tooltip-box"><div class="tooltip-message" id="TimeBand_cat_checkbox_tip_msg">View the interest over time compared to changes in interest in the <b>Food & Drink</b> category.</div></div><script type="text/javascript">new trends.Tooltip('TimeBand_cat_checkbox_tip_a', 'TimeBand_cat_checkbox_tip_c','true',undefined);</script></div>
+  </div>
+</div>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  TimeBand_cat_register(function(checked) {
+      document.getElementById("timeBand_tip_msg").innerHTML =
+          checked ?
+          'Numbers represent the increase in percent of the search volume relative to the earliest point in the graph for each of the plots separately. Hover over any point to see the figures at that time. \74a href\75\42//support.google.com/trends/bin/answer.py?hl\75en-US\46answer\7587285\42\76Learn more\74/a\076' :
+          'Numbers represent search interest relative to the highest point on the chart. If at most 10% of searches for the given region and time frame were for \42pizza,\42 we\47d consider this 100. This doesn\47t convey absolute search volume. \74a href\75\42//support.google.com/trends/bin/answer.py?hl\75en-US\46answer\7587285\42\76Learn more\74/a\076';
+  });
+  </script>
+<div id="overviewSearchesOverTimeDiv"
+       class="overviewSearchesOverTimeDiv">
+    <script type="text/javascript">
+
+  function TIMESERIES_GRAPH_divName(idx) {
+    return "TIMESERIES_GRAPH" + "_" + idx;
+  }
+
+  function TIMESERIES_GRAPH_switchChart(checked) {
+    var oldIdx = checked ? 0: 1;
+    var newIdx = checked ? 1: 0;
+    document.getElementById('TIMESERIES_GRAPH_' + oldIdx).style.display = "none";
+    document.getElementById('TIMESERIES_GRAPH_' + newIdx).style.display = "";
+  }
+
+  function TIMESERIES_GRAPH_Init() {
+    
+      document.getElementById(TIMESERIES_GRAPH_divName(1))
+          .style.display = "none";
+    
+  }
+
+  TimeBand_cat_register(TIMESERIES_GRAPH_switchChart);
+  </script>
+<div id="TIMESERIES_GRAPH_0">
+            <div id="TIMESERIES_GRAPH_0-time-chart" class="time-chart-container"></div>
+<script type="text/javascript">
+var chartData = {"columns":[{"id":"d","label":"Date","type":"datetime"},{"role":"annotation","type":"string"},{"p":{"html":true},"role":"annotationText","type":"string"},{"id":"q0","label":"salt","type":"number"},{"role":"annotation","type":"string"},{"p":{"html":true},"role":"annotationText","type":"string"},{"role":"certainty","type":"boolean"}],"headlineDataPoints":[],"width":800,"axisAnnotations":[],"rows":[[{"v":new Date(2004, 0, 16, 7, 0),"f":"January 2004"},null,null,46,null,null,true],[{"v":new Date(2004, 1, 15, 7, 0),"f":"February 2004"},null,null,42,null,null,true],[{"v":new Date(2004, 2, 16, 7, 0),"f":"March 2004"},null,null,44,null,null,true],[{"v":new Date(2004, 3, 15, 19, 0),"f":"April 2004"},null,null,39,null,null,true],[{"v":new Date(2004, 4, 16, 7, 0),"f":"May 2004"},null,null,46,null,null,true],[{"v":new Date(2004, 5, 15, 19, 0),"f":"June 2004"},null,null,42,null,null,true],[{"v":new Date(2004, 6, 16, 7, 0),"f":"July 2004"},null,null,46,null,null,true],[{"v":new Date(2004, 7, 16, 7, 0),"f":"August 2004"},null,null,40,null,null,true],[{"v":new Date(2004, 8, 15, 19, 0),"f":"September 2004"},null,null,45,null,null,true],[{"v":new Date(2004, 9, 16, 7, 0),"f":"October 2004"},null,null,43,null,null,true],[{"v":new Date(2004, 10, 15, 19, 0),"f":"November 2004"},null,null,45,null,null,true],[{"v":new Date(2004, 11, 16, 7, 0),"f":"December 2004"},null,null,46,null,null,true],[{"v":new Date(2005, 0, 16, 7, 0),"f":"January 2005"},null,null,45,null,null,true],[{"v":new Date(2005, 1, 14, 19, 0),"f":"February 2005"},null,null,49,null,null,true],[{"v":new Date(2005, 2, 16, 7, 0),"f":"March 2005"},null,null,44,null,null,true],[{"v":new Date(2005, 3, 15, 19, 0),"f":"April 2005"},null,null,41,null,null,true],[{"v":new Date(2005, 4, 16, 7, 0),"f":"May 2005"},null,null,44,null,null,true],[{"v":new Date(2005, 5, 15, 19, 0),"f":"June 2005"},null,null,43,null,null,true],[{"v":new Date(2005, 6, 16, 7, 0),"f":"July 2005"},null,null,41,null,null,true],[{"v":new Date(2005, 7, 16, 7, 0),"f":"August 2005"},null,null,43,null,null,true],[{"v":new Date(2005, 8, 15, 19, 0),"f":"September 2005"},null,null,43,null,null,true],[{"v":new Date(2005, 9, 16, 7, 0),"f":"October 2005"},null,null,44,null,null,true],[{"v":new Date(2005, 10, 15, 19, 0),"f":"November 2005"},null,null,51,null,null,true],[{"v":new Date(2005, 11, 16, 7, 0),"f":"December 2005"},null,null,48,null,null,true],[{"v":new Date(2006, 0, 16, 7, 0),"f":"January 2006"},null,null,45,null,null,true],[{"v":new Date(2006, 1, 14, 19, 0),"f":"February 2006"},null,null,43,null,null,true],[{"v":new Date(2006, 2, 16, 7, 0),"f":"March 2006"},null,null,44,null,null,true],[{"v":new Date(2006, 3, 15, 19, 0),"f":"April 2006"},null,null,42,null,null,true],[{"v":new Date(2006, 4, 16, 7, 0),"f":"May 2006"},null,null,40,null,null,true],[{"v":new Date(2006, 5, 15, 19, 0),"f":"June 2006"},null,null,42,null,null,true],[{"v":new Date(2006, 6, 16, 7, 0),"f":"July 2006"},null,null,42,null,null,true],[{"v":new Date(2006, 7, 16, 7, 0),"f":"August 2006"},null,null,44,null,null,true],[{"v":new Date(2006, 8, 15, 19, 0),"f":"September 2006"},null,null,41,null,null,true],[{"v":new Date(2006, 9, 16, 7, 0),"f":"October 2006"},null,null,44,null,null,true],[{"v":new Date(2006, 10, 15, 19, 0),"f":"November 2006"},null,null,48,null,null,true],[{"v":new Date(2006, 11, 16, 7, 0),"f":"December 2006"},null,null,48,null,null,true],[{"v":new Date(2007, 0, 16, 7, 0),"f":"January 2007"},null,null,46,null,null,true],[{"v":new Date(2007, 1, 14, 19, 0),"f":"February 2007"},null,null,44,null,null,true],[{"v":new Date(2007, 2, 16, 7, 0),"f":"March 2007"},null,null,41,null,null,true],[{"v":new Date(2007, 3, 15, 19, 0),"f":"April 2007"},null,null,42,null,null,true],[{"v":new Date(2007, 4, 16, 7, 0),"f":"May 2007"},null,null,43,null,null,true],[{"v":new Date(2007, 5, 15, 19, 0),"f":"June 2007"},null,null,39,null,null,true],[{"v":new Date(2007, 6, 16, 7, 0),"f":"July 2007"},null,null,43,null,null,true],[{"v":new Date(2007, 7, 16, 7, 0),"f":"August 2007"},null,null,41,null,null,true],[{"v":new Date(2007, 8, 15, 19, 0),"f":"September 2007"},null,null,41,null,null,true],[{"v":new Date(2007, 9, 16, 7, 0),"f":"October 2007"},null,null,44,null,null,true],[{"v":new Date(2007, 10, 15, 19, 0),"f":"November 2007"},null,null,46,null,null,true],[{"v":new Date(2007, 11, 16, 7, 0),"f":"December 2007"},null,null,51,null,null,true],[{"v":new Date(2008, 0, 16, 7, 0),"f":"January 2008"},null,null,45,null,null,true],[{"v":new Date(2008, 1, 15, 7, 0),"f":"February 2008"},null,null,45,null,null,true],[{"v":new Date(2008, 2, 16, 7, 0),"f":"March 2008"},null,null,42,null,null,true],[{"v":new Date(2008, 3, 15, 19, 0),"f":"April 2008"},null,null,40,null,null,true],[{"v":new Date(2008, 4, 16, 7, 0),"f":"May 2008"},null,null,41,null,null,true],[{"v":new Date(2008, 5, 15, 19, 0),"f":"June 2008"},null,null,38,null,null,true],[{"v":new Date(2008, 6, 16, 7, 0),"f":"July 2008"},null,null,42,null,null,true],[{"v":new Date(2008, 7, 16, 7, 0),"f":"August 2008"},null,null,41,null,null,true],[{"v":new Date(2008, 8, 15, 19, 0),"f":"September 2008"},null,null,40,null,null,true],[{"v":new Date(2008, 9, 16, 7, 0),"f":"October 2008"},null,null,43,null,null,true],[{"v":new Date(2008, 10, 15, 19, 0),"f":"November 2008"},null,null,46,null,null,true],[{"v":new Date(2008, 11, 16, 7, 0),"f":"December 2008"},null,null,50,null,null,true],[{"v":new Date(2009, 0, 16, 7, 0),"f":"January 2009"},null,null,45,null,null,true],[{"v":new Date(2009, 1, 14, 19, 0),"f":"February 2009"},null,null,45,null,null,true],[{"v":new Date(2009, 2, 16, 7, 0),"f":"March 2009"},null,null,43,null,null,true],[{"v":new Date(2009, 3, 15, 19, 0),"f":"April 2009"},null,null,43,null,null,true],[{"v":new Date(2009, 4, 16, 7, 0),"f":"May 2009"},null,null,41,null,null,true],[{"v":new Date(2009, 5, 15, 19, 0),"f":"June 2009"},null,null,40,null,null,true],[{"v":new Date(2009, 6, 16, 7, 0),"f":"July 2009"},null,null,44,null,null,true],[{"v":new Date(2009, 7, 16, 7, 0),"f":"August 2009"},null,null,44,null,null,true],[{"v":new Date(2009, 8, 15, 19, 0),"f":"September 2009"},null,null,43,null,null,true],[{"v":new Date(2009, 9, 16, 7, 0),"f":"October 2009"},null,null,43,null,null,true],[{"v":new Date(2009, 10, 15, 19, 0),"f":"November 2009"},null,null,48,null,null,true],[{"v":new Date(2009, 11, 16, 7, 0),"f":"December 2009"},null,null,50,null,null,true],[{"v":new Date(2010, 0, 16, 7, 0),"f":"January 2010"},null,null,50,null,null,true],[{"v":new Date(2010, 1, 14, 19, 0),"f":"February 2010"},null,null,46,null,null,true],[{"v":new Date(2010, 2, 16, 7, 0),"f":"March 2010"},null,null,44,null,null,true],[{"v":new Date(2010, 3, 15, 19, 0),"f":"April 2010"},null,null,44,null,null,true],[{"v":new Date(2010, 4, 16, 7, 0),"f":"May 2010"},null,null,45,null,null,true],[{"v":new Date(2010, 5, 15, 19, 0),"f":"June 2010"},null,null,46,null,null,true],[{"v":new Date(2010, 6, 16, 7, 0),"f":"July 2010"},null,null,80,null,null,true],[{"v":new Date(2010, 7, 16, 7, 0),"f":"August 2010"},null,null,100,null,null,true],[{"v":new Date(2010, 8, 15, 19, 0),"f":"September 2010"},null,null,72,null,null,true],[{"v":new Date(2010, 9, 16, 7, 0),"f":"October 2010"},null,null,56,null,null,true],[{"v":new Date(2010, 10, 15, 19, 0),"f":"November 2010"},null,null,63,null,null,true],[{"v":new Date(2010, 11, 16, 7, 0),"f":"December 2010"},null,null,74,null,null,true],[{"v":new Date(2011, 0, 16, 7, 0),"f":"January 2011"},null,null,65,null,null,true],[{"v":new Date(2011, 1, 14, 19, 0),"f":"February 2011"},null,null,58,null,null,true],[{"v":new Date(2011, 2, 16, 7, 0),"f":"March 2011"},null,null,54,null,null,true],[{"v":new Date(2011, 3, 15, 19, 0),"f":"April 2011"},null,null,55,null,null,true],[{"v":new Date(2011, 4, 16, 7, 0),"f":"May 2011"},null,null,53,null,null,true],[{"v":new Date(2011, 5, 15, 19, 0),"f":"June 2011"},null,null,53,null,null,true],[{"v":new Date(2011, 6, 16, 7, 0),"f":"July 2011"},null,null,55,null,null,true],[{"v":new Date(2011, 7, 16, 7, 0),"f":"August 2011"},null,null,53,null,null,true],[{"v":new Date(2011, 8, 15, 19, 0),"f":"September 2011"},null,null,51,null,null,true],[{"v":new Date(2011, 9, 16, 7, 0),"f":"October 2011"},null,null,50,null,null,true],[{"v":new Date(2011, 10, 15, 19, 0),"f":"November 2011"},null,null,56,null,null,true],[{"v":new Date(2011, 11, 16, 7, 0),"f":"December 2011"},null,null,62,null,null,true],[{"v":new Date(2012, 0, 16, 7, 0),"f":"January 2012"},null,null,55,null,null,true],[{"v":new Date(2012, 1, 15, 7, 0),"f":"February 2012"},null,null,54,null,null,true],[{"v":new Date(2012, 2, 16, 7, 0),"f":"March 2012"},null,null,51,null,null,true],[{"v":new Date(2012, 3, 15, 19, 0),"f":"April 2012"},null,null,50,null,null,true],[{"v":new Date(2012, 4, 16, 7, 0),"f":"May 2012"},null,null,50,null,null,true],[{"v":new Date(2012, 5, 15, 19, 0),"f":"June 2012"},null,null,54,null,null,true],[{"v":new Date(2012, 6, 16, 7, 0),"f":"July 2012"},null,null,57,null,null,true],[{"v":new Date(2012, 7, 16, 7, 0),"f":"August 2012"},null,null,58,null,null,true],[{"v":new Date(2012, 8, 15, 19, 0),"f":"September 2012"},null,null,57,null,null,true],[{"v":new Date(2012, 9, 16, 7, 0),"f":"October 2012"},null,null,53,null,null,true],[{"v":new Date(2012, 10, 15, 19, 0),"f":"November 2012"},null,null,58,null,null,true],[{"v":new Date(2012, 11, 16, 7, 0),"f":"December 2012"},null,null,64,null,null,true],[{"v":new Date(2013, 0, 16, 7, 0),"f":"January 2013"},null,null,57,null,null,true],[{"v":new Date(2013, 1, 14, 19, 0),"f":"February 2013"},null,null,58,null,null,true],[{"v":new Date(2013, 2, 16, 7, 0),"f":"March 2013"},null,null,58,null,null,true],[{"v":new Date(2013, 3, 15, 19, 0),"f":"April 2013"},null,null,56,null,null,true],[{"v":new Date(2013, 4, 16, 7, 0),"f":"May 2013"},null,null,56,null,null,true],[{"v":new Date(2013, 5, 15, 19, 0),"f":"June 2013"},null,null,55,null,null,true],[{"v":new Date(2013, 6, 16, 7, 0),"f":"July 2013"},null,null,60,null,null,true],[{"v":new Date(2013, 7, 16, 7, 0),"f":"August 2013"},null,null,60,null,null,true],[{"v":new Date(2013, 8, 15, 19, 0),"f":"September 2013"},null,null,57,null,null,true],[{"v":new Date(2013, 9, 16, 7, 0),"f":"October 2013"},null,null,57,null,null,true],[{"v":new Date(2013, 10, 15, 19, 0),"f":"November 2013"},null,null,64,null,null,true],[{"v":new Date(2013, 11, 16, 7, 0),"f":"December 2013"},null,null,69,null,null,true],[{"v":new Date(2014, 0, 16, 7, 0),"f":"January 2014"},null,null,63,null,null,true],[{"v":new Date(2014, 1, 14, 19, 0),"f":"February 2014"},null,null,62,null,null,true],[{"v":new Date(2014, 2, 16, 7, 0),"f":"March 2014"},null,null,60,null,null,true],[{"v":new Date(2014, 3, 15, 19, 0),"f":"April 2014"},null,null,57,null,null,true],[{"v":new Date(2014, 4, 16, 7, 0),"f":"May 2014"},null,null,59,null,null,true],[{"v":new Date(2014, 5, 15, 19, 0),"f":"June 2014"},null,null,59,null,null,true],[{"v":new Date(2014, 6, 16, 7, 0),"f":"July 2014"},null,null,63,null,null,true],[{"v":new Date(2014, 7, 16, 7, 0),"f":"August 2014"},null,null,63,null,null,true],[{"v":new Date(2014, 8, 15, 19, 0),"f":"September 2014"},null,null,57,null,null,true],[{"v":new Date(2014, 9, 16, 7, 0),"f":"October 2014"},null,null,59,null,null,true],[{"v":new Date(2014, 10, 15, 19, 0),"f":"November 2014"},null,null,68,null,null,true],[{"v":new Date(2014, 11, 16, 7, 0),"f":"December 2014"},null,null,71,null,null,true],[{"v":new Date(2015, 0, 16, 7, 0),"f":"January 2015"},null,null,67,null,null,true],[{"v":new Date(2015, 1, 14, 19, 0),"f":"February 2015"},null,null,64,null,null,true],[{"v":new Date(2015, 2, 16, 7, 0),"f":"March 2015"},null,null,61,null,null,true],[{"v":new Date(2015, 3, 15, 19, 0),"f":"April 2015"},null,null,64,null,null,true],[{"v":new Date(2015, 4, 16, 7, 0),"f":"May 2015"},null,null,66,null,null,true],[{"v":new Date(2015, 5, 15, 19, 0),"f":"June 2015"},null,null,67,null,null,true],[{"v":new Date(2015, 6, 16, 7, 0),"f":"July 2015"},null,null,69,null,null,true],[{"v":new Date(2015, 7, 16, 7, 0),"f":"August 2015"},null,null,71,null,null,true],[{"v":new Date(2015, 8, 15, 19, 0),"f":"September 2015"},null,null,65,null,null,true],[{"v":new Date(2015, 9, 16, 7, 0),"f":"October 2015"},null,null,65,null,null,true],[{"v":new Date(2015, 10, 15, 19, 0),"f":"November 2015 (partial data)"},null,null,67,null,null,true],[{"v":new Date(2015, 11, 16, 7, 0),"f":"December 2015 (forecast)"},null,null,75,null,null,false],[{"v":new Date(2016, 0, 16, 7, 0),"f":"January 2016 (forecast)"},null,null,68,null,null,false],[{"v":new Date(2016, 1, 15, 7, 0),"f":"February 2016 (forecast)"},null,null,67,null,null,false],[{"v":new Date(2016, 2, 16, 7, 0),"f":"March 2016 (forecast)"},null,null,65,null,null,false],[{"v":new Date(2016, 3, 15, 19, 0),"f":"April 2016 (forecast)"},null,null,65,null,null,false],[{"v":new Date(2016, 4, 16, 7, 0),"f":"May 2016 (forecast)"},null,null,67,null,null,false],[{"v":new Date(2016, 5, 15, 19, 0),"f":"June 2016 (forecast)"},null,null,67,null,null,false],[{"v":new Date(2016, 6, 16, 7, 0),"f":"July 2016 (forecast)"},null,null,71,null,null,false],[{"v":new Date(2016, 7, 16, 7, 0),"f":"August 2016 (forecast)"},null,null,72,null,null,false],[{"v":new Date(2016, 8, 15, 19, 0),"f":"September 2016 (forecast)"},null,null,66,null,null,false],[{"v":new Date(2016, 9, 16, 7, 0),"f":"October 2016 (forecast)"},null,null,66,null,null,false],[{"v":new Date(2016, 10, 15, 19, 0),"f":"November 2016 (forecast)"},null,null,71,null,null,false]],"showHeadlines":false,"percentData":false,"colors":["#3f85f2"],"height":230}; var NEWS_HEADLINE_LIST_htmlChart = new trends.HtmlChart( 'TIMESERIES_GRAPH_0-time-chart', chartData.columns, chartData.rows, chartData.headlineDataPoints, 'NEWS_HEADLINE_LIST' , chartData.showHeadlines,false, chartData.percentData, chartData.colors, chartData.width, chartData.height, chartData.axisAnnotations);NEWS_HEADLINE_LIST_htmlChart.render();TimeBand_forecast_register(function (show) {
+        NEWS_HEADLINE_LIST_htmlChart.onForecastVisibilityChanged(show);
+      });
+    TimeBand_headlines_register(function(withAnnotations) {
+        var htmlChart = trends.HtmlChart.headlineIdsToCharts['NEWS_HEADLINE_LIST'];
+        if (htmlChart) {
+          htmlChart.onHeadlineVisibilityChanged(withAnnotations);
+        }
+      });
+    </script>
+<div class="time-chart-share">
+    <div class="embed-icon-container" onclick="shareControl_TIMESERIES_GRAPH_0_share.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="TIMESERIES_GRAPH_0_share_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="TIMESERIES_GRAPH_0_share_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_TIMESERIES_GRAPH_0_share.update()"
+             value="500" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="TIMESERIES_GRAPH_0_share_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_TIMESERIES_GRAPH_0_share.update()"
+             value="330" />
+
+      <span style='display: none;'>
+        <span id="TIMESERIES_GRAPH_0_share_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="TIMESERIES_GRAPH_0_share_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="TIMESERIES_GRAPH_0_share_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_TIMESERIES_GRAPH_0_share = new trends.ShareControl(
+      "TIMESERIES_GRAPH_0_share", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75TIMESERIES_GRAPH_0\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+</div>
+<div id="TIMESERIES_GRAPH_1">
+            <div id="TIMESERIES_GRAPH_1-time-chart" class="time-chart-container"></div>
+<script type="text/javascript">
+var chartData = {"columns":[{"id":"d","label":"Date","type":"datetime"},{"role":"annotation","type":"string"},{"p":{"html":true},"role":"annotationText","type":"string"},{"id":"q0","label":"Food \u0026 Drink","type":"number"},{"role":"annotation","type":"string"},{"p":{"html":true},"role":"annotationText","type":"string"},{"role":"certainty","type":"boolean"},{"id":"q1","label":"salt","type":"number"},{"role":"annotation","type":"string"},{"p":{"html":true},"role":"annotationText","type":"string"},{"role":"certainty","type":"boolean"}],"headlineDataPoints":[],"width":800,"axisAnnotations":[],"rows":[[{"v":new Date(2004, 0, 16, 7, 0),"f":"January 2004"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2004, 1, 15, 7, 0),"f":"February 2004"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.09,"f":"-9%"},null,null,true],[{"v":new Date(2004, 2, 16, 7, 0),"f":"March 2004"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2004, 3, 15, 19, 0),"f":"April 2004"},null,null,{"v":-0.05,"f":"-5%"},null,null,true,{"v":-0.15,"f":"-15%"},null,null,true],[{"v":new Date(2004, 4, 16, 7, 0),"f":"May 2004"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2004, 5, 15, 19, 0),"f":"June 2004"},null,null,{"v":-0.05,"f":"-5%"},null,null,true,{"v":-0.09,"f":"-9%"},null,null,true],[{"v":new Date(2004, 6, 16, 7, 0),"f":"July 2004"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2004, 7, 16, 7, 0),"f":"August 2004"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.13,"f":"-13%"},null,null,true],[{"v":new Date(2004, 8, 15, 19, 0),"f":"September 2004"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2004, 9, 16, 7, 0),"f":"October 2004"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2004, 10, 15, 19, 0),"f":"November 2004"},null,null,{"v":0.02,"f":"2%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2004, 11, 16, 7, 0),"f":"December 2004"},null,null,{"v":0.11,"f":"11%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2005, 0, 16, 7, 0),"f":"January 2005"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2005, 1, 14, 19, 0),"f":"February 2005"},null,null,{"v":0.02,"f":"2%"},null,null,true,{"v":0.07,"f":"7%"},null,null,true],[{"v":new Date(2005, 2, 16, 7, 0),"f":"March 2005"},null,null,{"v":0.02,"f":"2%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2005, 3, 15, 19, 0),"f":"April 2005"},null,null,{"v":-0.06,"f":"-6%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2005, 4, 16, 7, 0),"f":"May 2005"},null,null,{"v":-0.05,"f":"-5%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2005, 5, 15, 19, 0),"f":"June 2005"},null,null,{"v":-0.06,"f":"-6%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2005, 6, 16, 7, 0),"f":"July 2005"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2005, 7, 16, 7, 0),"f":"August 2005"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2005, 8, 15, 19, 0),"f":"September 2005"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2005, 9, 16, 7, 0),"f":"October 2005"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2005, 10, 15, 19, 0),"f":"November 2005"},null,null,{"v":0.06,"f":"6%"},null,null,true,{"v":0.11,"f":"11%"},null,null,true],[{"v":new Date(2005, 11, 16, 7, 0),"f":"December 2005"},null,null,{"v":0.14,"f":"14%"},null,null,true,{"v":0.04,"f":"4%"},null,null,true],[{"v":new Date(2006, 0, 16, 7, 0),"f":"January 2006"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2006, 1, 14, 19, 0),"f":"February 2006"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2006, 2, 16, 7, 0),"f":"March 2006"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2006, 3, 15, 19, 0),"f":"April 2006"},null,null,{"v":-0.05,"f":"-5%"},null,null,true,{"v":-0.09,"f":"-9%"},null,null,true],[{"v":new Date(2006, 4, 16, 7, 0),"f":"May 2006"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.13,"f":"-13%"},null,null,true],[{"v":new Date(2006, 5, 15, 19, 0),"f":"June 2006"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.09,"f":"-9%"},null,null,true],[{"v":new Date(2006, 6, 16, 7, 0),"f":"July 2006"},null,null,{"v":-0.05,"f":"-5%"},null,null,true,{"v":-0.09,"f":"-9%"},null,null,true],[{"v":new Date(2006, 7, 16, 7, 0),"f":"August 2006"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2006, 8, 15, 19, 0),"f":"September 2006"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2006, 9, 16, 7, 0),"f":"October 2006"},null,null,{"v":0.03,"f":"3%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2006, 10, 15, 19, 0),"f":"November 2006"},null,null,{"v":0.08,"f":"8%"},null,null,true,{"v":0.04,"f":"4%"},null,null,true],[{"v":new Date(2006, 11, 16, 7, 0),"f":"December 2006"},null,null,{"v":0.16,"f":"16%"},null,null,true,{"v":0.04,"f":"4%"},null,null,true],[{"v":new Date(2007, 0, 16, 7, 0),"f":"January 2007"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2007, 1, 14, 19, 0),"f":"February 2007"},null,null,{"v":0.02,"f":"2%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2007, 2, 16, 7, 0),"f":"March 2007"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2007, 3, 15, 19, 0),"f":"April 2007"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.09,"f":"-9%"},null,null,true],[{"v":new Date(2007, 4, 16, 7, 0),"f":"May 2007"},null,null,{"v":-0.06,"f":"-6%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2007, 5, 15, 19, 0),"f":"June 2007"},null,null,{"v":-0.05,"f":"-5%"},null,null,true,{"v":-0.15,"f":"-15%"},null,null,true],[{"v":new Date(2007, 6, 16, 7, 0),"f":"July 2007"},null,null,{"v":0.02,"f":"2%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2007, 7, 16, 7, 0),"f":"August 2007"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2007, 8, 15, 19, 0),"f":"September 2007"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2007, 9, 16, 7, 0),"f":"October 2007"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2007, 10, 15, 19, 0),"f":"November 2007"},null,null,{"v":0.03,"f":"3%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2007, 11, 16, 7, 0),"f":"December 2007"},null,null,{"v":0.13,"f":"13%"},null,null,true,{"v":0.11,"f":"11%"},null,null,true],[{"v":new Date(2008, 0, 16, 7, 0),"f":"January 2008"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2008, 1, 15, 7, 0),"f":"February 2008"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2008, 2, 16, 7, 0),"f":"March 2008"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.09,"f":"-9%"},null,null,true],[{"v":new Date(2008, 3, 15, 19, 0),"f":"April 2008"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.13,"f":"-13%"},null,null,true],[{"v":new Date(2008, 4, 16, 7, 0),"f":"May 2008"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2008, 5, 15, 19, 0),"f":"June 2008"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.17,"f":"-17%"},null,null,true],[{"v":new Date(2008, 6, 16, 7, 0),"f":"July 2008"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.09,"f":"-9%"},null,null,true],[{"v":new Date(2008, 7, 16, 7, 0),"f":"August 2008"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2008, 8, 15, 19, 0),"f":"September 2008"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.13,"f":"-13%"},null,null,true],[{"v":new Date(2008, 9, 16, 7, 0),"f":"October 2008"},null,null,{"v":0.03,"f":"3%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2008, 10, 15, 19, 0),"f":"November 2008"},null,null,{"v":0.05,"f":"5%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2008, 11, 16, 7, 0),"f":"December 2008"},null,null,{"v":0.14,"f":"14%"},null,null,true,{"v":0.09,"f":"9%"},null,null,true],[{"v":new Date(2009, 0, 16, 7, 0),"f":"January 2009"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2009, 1, 14, 19, 0),"f":"February 2009"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2009, 2, 16, 7, 0),"f":"March 2009"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2009, 3, 15, 19, 0),"f":"April 2009"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2009, 4, 16, 7, 0),"f":"May 2009"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.11,"f":"-11%"},null,null,true],[{"v":new Date(2009, 5, 15, 19, 0),"f":"June 2009"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.13,"f":"-13%"},null,null,true],[{"v":new Date(2009, 6, 16, 7, 0),"f":"July 2009"},null,null,{"v":0.02,"f":"2%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2009, 7, 16, 7, 0),"f":"August 2009"},null,null,{"v":0.03,"f":"3%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2009, 8, 15, 19, 0),"f":"September 2009"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2009, 9, 16, 7, 0),"f":"October 2009"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.07,"f":"-7%"},null,null,true],[{"v":new Date(2009, 10, 15, 19, 0),"f":"November 2009"},null,null,{"v":0.06,"f":"6%"},null,null,true,{"v":0.04,"f":"4%"},null,null,true],[{"v":new Date(2009, 11, 16, 7, 0),"f":"December 2009"},null,null,{"v":0.14,"f":"14%"},null,null,true,{"v":0.09,"f":"9%"},null,null,true],[{"v":new Date(2010, 0, 16, 7, 0),"f":"January 2010"},null,null,{"v":0.03,"f":"3%"},null,null,true,{"v":0.09,"f":"9%"},null,null,true],[{"v":new Date(2010, 1, 14, 19, 0),"f":"February 2010"},null,null,{"v":0.02,"f":"2%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2010, 2, 16, 7, 0),"f":"March 2010"},null,null,{"v":-0.02,"f":"-2%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2010, 3, 15, 19, 0),"f":"April 2010"},null,null,{"v":-0.03,"f":"-3%"},null,null,true,{"v":-0.04,"f":"-4%"},null,null,true],[{"v":new Date(2010, 4, 16, 7, 0),"f":"May 2010"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":-0.02,"f":"-2%"},null,null,true],[{"v":new Date(2010, 5, 15, 19, 0),"f":"June 2010"},null,null,{"v":0,"f":"0%"},null,null,true,{"v":0,"f":"0%"},null,null,true],[{"v":new Date(2010, 6, 16, 7, 0),"f":"July 2010"},null,null,{"v":0.05,"f":"5%"},null,null,true,{"v":0.74,"f":"74%"},null,null,true],[{"v":new Date(2010, 7, 16, 7, 0),"f":"August 2010"},null,null,{"v":0.09,"f":"9%"},null,null,true,{"v":1.17,"f":"117%"},null,null,true],[{"v":new Date(2010, 8, 15, 19, 0),"f":"September 2010"},null,null,{"v":0.06,"f":"6%"},null,null,true,{"v":0.57,"f":"57%"},null,null,true],[{"v":new Date(2010, 9, 16, 7, 0),"f":"October 2010"},null,null,{"v":0.08,"f":"8%"},null,null,true,{"v":0.22,"f":"22%"},null,null,true],[{"v":new Date(2010, 10, 15, 19, 0),"f":"November 2010"},null,null,{"v":0.16,"f":"16%"},null,null,true,{"v":0.37,"f":"37%"},null,null,true],[{"v":new Date(2010, 11, 16, 7, 0),"f":"December 2010"},null,null,{"v":0.23,"f":"23%"},null,null,true,{"v":0.61,"f":"61%"},null,null,true],[{"v":new Date(2011, 0, 16, 7, 0),"f":"January 2011"},null,null,{"v":0.08,"f":"8%"},null,null,true,{"v":0.41,"f":"41%"},null,null,true],[{"v":new Date(2011, 1, 14, 19, 0),"f":"February 2011"},null,null,{"v":0.11,"f":"11%"},null,null,true,{"v":0.26,"f":"26%"},null,null,true],[{"v":new Date(2011, 2, 16, 7, 0),"f":"March 2011"},null,null,{"v":0.08,"f":"8%"},null,null,true,{"v":0.17,"f":"17%"},null,null,true],[{"v":new Date(2011, 3, 15, 19, 0),"f":"April 2011"},null,null,{"v":0.13,"f":"13%"},null,null,true,{"v":0.2,"f":"20%"},null,null,true],[{"v":new Date(2011, 4, 16, 7, 0),"f":"May 2011"},null,null,{"v":0.09,"f":"9%"},null,null,true,{"v":0.15,"f":"15%"},null,null,true],[{"v":new Date(2011, 5, 15, 19, 0),"f":"June 2011"},null,null,{"v":0.13,"f":"13%"},null,null,true,{"v":0.15,"f":"15%"},null,null,true],[{"v":new Date(2011, 6, 16, 7, 0),"f":"July 2011"},null,null,{"v":0.14,"f":"14%"},null,null,true,{"v":0.2,"f":"20%"},null,null,true],[{"v":new Date(2011, 7, 16, 7, 0),"f":"August 2011"},null,null,{"v":0.14,"f":"14%"},null,null,true,{"v":0.15,"f":"15%"},null,null,true],[{"v":new Date(2011, 8, 15, 19, 0),"f":"September 2011"},null,null,{"v":0.13,"f":"13%"},null,null,true,{"v":0.11,"f":"11%"},null,null,true],[{"v":new Date(2011, 9, 16, 7, 0),"f":"October 2011"},null,null,{"v":0.16,"f":"16%"},null,null,true,{"v":0.09,"f":"9%"},null,null,true],[{"v":new Date(2011, 10, 15, 19, 0),"f":"November 2011"},null,null,{"v":0.22,"f":"22%"},null,null,true,{"v":0.22,"f":"22%"},null,null,true],[{"v":new Date(2011, 11, 16, 7, 0),"f":"December 2011"},null,null,{"v":0.36,"f":"36%"},null,null,true,{"v":0.35,"f":"35%"},null,null,true],[{"v":new Date(2012, 0, 16, 7, 0),"f":"January 2012"},null,null,{"v":0.19,"f":"19%"},null,null,true,{"v":0.2,"f":"20%"},null,null,true],[{"v":new Date(2012, 1, 15, 7, 0),"f":"February 2012"},null,null,{"v":0.22,"f":"22%"},null,null,true,{"v":0.17,"f":"17%"},null,null,true],[{"v":new Date(2012, 2, 16, 7, 0),"f":"March 2012"},null,null,{"v":0.2,"f":"20%"},null,null,true,{"v":0.11,"f":"11%"},null,null,true],[{"v":new Date(2012, 3, 15, 19, 0),"f":"April 2012"},null,null,{"v":0.22,"f":"22%"},null,null,true,{"v":0.09,"f":"9%"},null,null,true],[{"v":new Date(2012, 4, 16, 7, 0),"f":"May 2012"},null,null,{"v":0.2,"f":"20%"},null,null,true,{"v":0.09,"f":"9%"},null,null,true],[{"v":new Date(2012, 5, 15, 19, 0),"f":"June 2012"},null,null,{"v":0.22,"f":"22%"},null,null,true,{"v":0.17,"f":"17%"},null,null,true],[{"v":new Date(2012, 6, 16, 7, 0),"f":"July 2012"},null,null,{"v":0.27,"f":"27%"},null,null,true,{"v":0.24,"f":"24%"},null,null,true],[{"v":new Date(2012, 7, 16, 7, 0),"f":"August 2012"},null,null,{"v":0.27,"f":"27%"},null,null,true,{"v":0.26,"f":"26%"},null,null,true],[{"v":new Date(2012, 8, 15, 19, 0),"f":"September 2012"},null,null,{"v":0.27,"f":"27%"},null,null,true,{"v":0.24,"f":"24%"},null,null,true],[{"v":new Date(2012, 9, 16, 7, 0),"f":"October 2012"},null,null,{"v":0.27,"f":"27%"},null,null,true,{"v":0.15,"f":"15%"},null,null,true],[{"v":new Date(2012, 10, 15, 19, 0),"f":"November 2012"},null,null,{"v":0.31,"f":"31%"},null,null,true,{"v":0.26,"f":"26%"},null,null,true],[{"v":new Date(2012, 11, 16, 7, 0),"f":"December 2012"},null,null,{"v":0.38,"f":"38%"},null,null,true,{"v":0.39,"f":"39%"},null,null,true],[{"v":new Date(2013, 0, 16, 7, 0),"f":"January 2013"},null,null,{"v":0.27,"f":"27%"},null,null,true,{"v":0.24,"f":"24%"},null,null,true],[{"v":new Date(2013, 1, 14, 19, 0),"f":"February 2013"},null,null,{"v":0.3,"f":"30%"},null,null,true,{"v":0.26,"f":"26%"},null,null,true],[{"v":new Date(2013, 2, 16, 7, 0),"f":"March 2013"},null,null,{"v":0.31,"f":"31%"},null,null,true,{"v":0.26,"f":"26%"},null,null,true],[{"v":new Date(2013, 3, 15, 19, 0),"f":"April 2013"},null,null,{"v":0.25,"f":"25%"},null,null,true,{"v":0.22,"f":"22%"},null,null,true],[{"v":new Date(2013, 4, 16, 7, 0),"f":"May 2013"},null,null,{"v":0.27,"f":"27%"},null,null,true,{"v":0.22,"f":"22%"},null,null,true],[{"v":new Date(2013, 5, 15, 19, 0),"f":"June 2013"},null,null,{"v":0.3,"f":"30%"},null,null,true,{"v":0.2,"f":"20%"},null,null,true],[{"v":new Date(2013, 6, 16, 7, 0),"f":"July 2013"},null,null,{"v":0.3,"f":"30%"},null,null,true,{"v":0.3,"f":"30%"},null,null,true],[{"v":new Date(2013, 7, 16, 7, 0),"f":"August 2013"},null,null,{"v":0.33,"f":"33%"},null,null,true,{"v":0.3,"f":"30%"},null,null,true],[{"v":new Date(2013, 8, 15, 19, 0),"f":"September 2013"},null,null,{"v":0.36,"f":"36%"},null,null,true,{"v":0.24,"f":"24%"},null,null,true],[{"v":new Date(2013, 9, 16, 7, 0),"f":"October 2013"},null,null,{"v":0.34,"f":"34%"},null,null,true,{"v":0.24,"f":"24%"},null,null,true],[{"v":new Date(2013, 10, 15, 19, 0),"f":"November 2013"},null,null,{"v":0.41,"f":"41%"},null,null,true,{"v":0.39,"f":"39%"},null,null,true],[{"v":new Date(2013, 11, 16, 7, 0),"f":"December 2013"},null,null,{"v":0.5,"f":"50%"},null,null,true,{"v":0.5,"f":"50%"},null,null,true],[{"v":new Date(2014, 0, 16, 7, 0),"f":"January 2014"},null,null,{"v":0.38,"f":"38%"},null,null,true,{"v":0.37,"f":"37%"},null,null,true],[{"v":new Date(2014, 1, 14, 19, 0),"f":"February 2014"},null,null,{"v":0.38,"f":"38%"},null,null,true,{"v":0.35,"f":"35%"},null,null,true],[{"v":new Date(2014, 2, 16, 7, 0),"f":"March 2014"},null,null,{"v":0.36,"f":"36%"},null,null,true,{"v":0.3,"f":"30%"},null,null,true],[{"v":new Date(2014, 3, 15, 19, 0),"f":"April 2014"},null,null,{"v":0.38,"f":"38%"},null,null,true,{"v":0.24,"f":"24%"},null,null,true],[{"v":new Date(2014, 4, 16, 7, 0),"f":"May 2014"},null,null,{"v":0.33,"f":"33%"},null,null,true,{"v":0.28,"f":"28%"},null,null,true],[{"v":new Date(2014, 5, 15, 19, 0),"f":"June 2014"},null,null,{"v":0.31,"f":"31%"},null,null,true,{"v":0.28,"f":"28%"},null,null,true],[{"v":new Date(2014, 6, 16, 7, 0),"f":"July 2014"},null,null,{"v":0.38,"f":"38%"},null,null,true,{"v":0.37,"f":"37%"},null,null,true],[{"v":new Date(2014, 7, 16, 7, 0),"f":"August 2014"},null,null,{"v":0.41,"f":"41%"},null,null,true,{"v":0.37,"f":"37%"},null,null,true],[{"v":new Date(2014, 8, 15, 19, 0),"f":"September 2014"},null,null,{"v":0.31,"f":"31%"},null,null,true,{"v":0.24,"f":"24%"},null,null,true],[{"v":new Date(2014, 9, 16, 7, 0),"f":"October 2014"},null,null,{"v":0.39,"f":"39%"},null,null,true,{"v":0.28,"f":"28%"},null,null,true],[{"v":new Date(2014, 10, 15, 19, 0),"f":"November 2014"},null,null,{"v":0.47,"f":"47%"},null,null,true,{"v":0.48,"f":"48%"},null,null,true],[{"v":new Date(2014, 11, 16, 7, 0),"f":"December 2014"},null,null,{"v":0.56,"f":"56%"},null,null,true,{"v":0.54,"f":"54%"},null,null,true],[{"v":new Date(2015, 0, 16, 7, 0),"f":"January 2015"},null,null,{"v":0.42,"f":"42%"},null,null,true,{"v":0.46,"f":"46%"},null,null,true],[{"v":new Date(2015, 1, 14, 19, 0),"f":"February 2015"},null,null,{"v":0.39,"f":"39%"},null,null,true,{"v":0.39,"f":"39%"},null,null,true],[{"v":new Date(2015, 2, 16, 7, 0),"f":"March 2015"},null,null,{"v":0.38,"f":"38%"},null,null,true,{"v":0.33,"f":"33%"},null,null,true],[{"v":new Date(2015, 3, 15, 19, 0),"f":"April 2015"},null,null,{"v":0.47,"f":"47%"},null,null,true,{"v":0.39,"f":"39%"},null,null,true],[{"v":new Date(2015, 4, 16, 7, 0),"f":"May 2015"},null,null,{"v":0.41,"f":"41%"},null,null,true,{"v":0.43,"f":"43%"},null,null,true],[{"v":new Date(2015, 5, 15, 19, 0),"f":"June 2015"},null,null,{"v":0.47,"f":"47%"},null,null,true,{"v":0.46,"f":"46%"},null,null,true],[{"v":new Date(2015, 6, 16, 7, 0),"f":"July 2015"},null,null,{"v":0.47,"f":"47%"},null,null,true,{"v":0.5,"f":"50%"},null,null,true],[{"v":new Date(2015, 7, 16, 7, 0),"f":"August 2015"},null,null,{"v":0.52,"f":"52%"},null,null,true,{"v":0.54,"f":"54%"},null,null,true],[{"v":new Date(2015, 8, 15, 19, 0),"f":"September 2015"},null,null,{"v":0.44,"f":"44%"},null,null,true,{"v":0.41,"f":"41%"},null,null,true],[{"v":new Date(2015, 9, 16, 7, 0),"f":"October 2015"},null,null,{"v":0.52,"f":"52%"},null,null,true,{"v":0.41,"f":"41%"},null,null,true],[{"v":new Date(2015, 10, 15, 19, 0),"f":"November 2015 (partial data)"},null,null,{"v":0.52,"f":"52%"},null,null,true,{"v":0.46,"f":"46%"},null,null,true],[{"v":new Date(2015, 11, 16, 7, 0),"f":"December 2015 (forecast)"},null,null,{"v":0.62,"f":"62%"},null,null,false,{"v":0.62,"f":"62%"},null,null,false],[{"v":new Date(2016, 0, 16, 7, 0),"f":"January 2016 (forecast)"},null,null,{"v":0.48,"f":"48%"},null,null,false,{"v":0.49,"f":"49%"},null,null,false],[{"v":new Date(2016, 1, 15, 7, 0),"f":"February 2016 (forecast)"},null,null,{"v":0.47,"f":"47%"},null,null,false,{"v":0.46,"f":"46%"},null,null,false],[{"v":new Date(2016, 2, 16, 7, 0),"f":"March 2016 (forecast)"},null,null,{"v":0.45,"f":"45%"},null,null,false,{"v":0.4,"f":"40%"},null,null,false],[{"v":new Date(2016, 3, 15, 19, 0),"f":"April 2016 (forecast)"},null,null,{"v":0.51,"f":"51%"},null,null,false,{"v":0.41,"f":"41%"},null,null,false],[{"v":new Date(2016, 4, 16, 7, 0),"f":"May 2016 (forecast)"},null,null,{"v":0.46,"f":"46%"},null,null,false,{"v":0.45,"f":"45%"},null,null,false],[{"v":new Date(2016, 5, 15, 19, 0),"f":"June 2016 (forecast)"},null,null,{"v":0.5,"f":"50%"},null,null,false,{"v":0.46,"f":"46%"},null,null,false],[{"v":new Date(2016, 6, 16, 7, 0),"f":"July 2016 (forecast)"},null,null,{"v":0.51,"f":"51%"},null,null,false,{"v":0.53,"f":"53%"},null,null,false],[{"v":new Date(2016, 7, 16, 7, 0),"f":"August 2016 (forecast)"},null,null,{"v":0.54,"f":"54%"},null,null,false,{"v":0.56,"f":"56%"},null,null,false],[{"v":new Date(2016, 8, 15, 19, 0),"f":"September 2016 (forecast)"},null,null,{"v":0.48,"f":"48%"},null,null,false,{"v":0.42,"f":"42%"},null,null,false],[{"v":new Date(2016, 9, 16, 7, 0),"f":"October 2016 (forecast)"},null,null,{"v":0.54,"f":"54%"},null,null,false,{"v":0.43,"f":"43%"},null,null,false],[{"v":new Date(2016, 10, 15, 19, 0),"f":"November 2016 (forecast)"},null,null,{"v":0.57,"f":"57%"},null,null,false,{"v":0.55,"f":"55%"},null,null,false]],"showHeadlines":false,"percentData":true,"colors":["#082B66","#3f85f2"],"height":230}; var null_htmlChart = new trends.HtmlChart( 'TIMESERIES_GRAPH_1-time-chart', chartData.columns, chartData.rows, chartData.headlineDataPoints, null , chartData.showHeadlines,false, chartData.percentData, chartData.colors, chartData.width, chartData.height, chartData.axisAnnotations);null_htmlChart.render();TimeBand_forecast_register(function (show) {
+        null_htmlChart.onForecastVisibilityChanged(show);
+      });
+    TimeBand_headlines_register(function(withAnnotations) {
+        var htmlChart = trends.HtmlChart.headlineIdsToCharts['null'];
+        if (htmlChart) {
+          htmlChart.onHeadlineVisibilityChanged(withAnnotations);
+        }
+      });
+    </script>
+<div class="time-chart-share">
+    <div class="embed-icon-container" onclick="shareControl_TIMESERIES_GRAPH_1_share.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="TIMESERIES_GRAPH_1_share_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="TIMESERIES_GRAPH_1_share_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_TIMESERIES_GRAPH_1_share.update()"
+             value="500" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="TIMESERIES_GRAPH_1_share_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_TIMESERIES_GRAPH_1_share.update()"
+             value="330" />
+
+      <span style='display: none;'>
+        <span id="TIMESERIES_GRAPH_1_share_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="TIMESERIES_GRAPH_1_share_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="TIMESERIES_GRAPH_1_share_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_TIMESERIES_GRAPH_1_share = new trends.ShareControl(
+      "TIMESERIES_GRAPH_1_share", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75TIMESERIES_GRAPH_1\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+</div>
+<script type="text/javascript">
+  TIMESERIES_GRAPH_Init();
+</script>
+
+</div>
+  </div>
+<script type="text/javascript">
+        var regionalTabPane = new trends.TabPane('regionalTabPane');
+        var relatedTabPane = new trends.TabPane('relatedTabPane');
+      </script>
+      <div id="regionalTabPane"></div>
+      <div class="trendsReportBottomArea">
+        <div class="single-tab-container">
+          <div id="regionalTabPage0">
+              <div class="geoSection">
+  <div class="primaryBand geoBand">
+<div class="geoBandTitle">
+    <span class="title-content">Regional interest</span>
+    <div class="geoBandTooltip trendsBandTooltip">
+      <div id="GeoBand0_0_tip_a" class="tooltip-icon"><div class="SPRITE_help"></div></div><div id="GeoBand0_0_tip_c" class="tooltip-content tooltip-box"><div class="tooltip-message" id="GeoBand0_0_tip_msg">Numbers represent search volume relative to the highest point on the map which is always 100. Click on any region/point to see more details on the search volume there.</div></div><script type="text/javascript">new trends.Tooltip('GeoBand0_0_tip_a', 'GeoBand0_0_tip_c',undefined,undefined);</script></div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  
+  var GeoBand0_0_listeners = [];
+  GeoBand0_0_register = function(listenerFunc) {
+    GeoBand0_0_listeners.push(listenerFunc);
+  }
+  GeoBand0_0_fire = function(level, oldIndex, newIndex) {
+    for(var i = 0; i < GeoBand0_0_listeners.length; i++) {
+      GeoBand0_0_listeners[i](level, oldIndex, newIndex);
+    }
+  }
+</script>
+<div id="geoHorizontalLinksMenu0"
+      class="geoHorizontalLinksMenu">
+      <script type="text/javascript">
+
+  function GeoBand0_select1_getElement(index) {
+    return document.getElementById("GeoBand0_select1_" + index);
+  }
+
+  function GeoBand0_select1_setSelectedStyle(element, isSelected) {
+    element.className = isSelected ? 'disabledAnchor' : '';
+  }
+  var GeoBand0_select1_selected = "0";
+
+  function GeoBand0_select1_init() {
+    var current = GeoBand0_select1_getElement(GeoBand0_select1_selected);
+    GeoBand0_select1_setSelectedStyle(current, true);
+  }
+
+  function GeoBand0_select1_linkClicked(newindex) {
+  
+    if (newindex == GeoBand0_select1_selected) {
+      return false;
+    }
+
+    var current = GeoBand0_select1_getElement(GeoBand0_select1_selected);
+    var newLink = GeoBand0_select1_getElement(newindex);
+
+    (function(oldIndex, newIndex) {
+            GeoBand0_0_fire(1, oldIndex, newIndex);})(GeoBand0_select1_selected, newindex);
+
+    // change style
+    GeoBand0_select1_setSelectedStyle(current, false);
+    GeoBand0_select1_setSelectedStyle(newLink, true);
+    GeoBand0_select1_selected = newindex;
+    return true;
+  
+  }
+
+</script>
+
+<div class="horizontalLinksMenu">
+<span class="horizontal-link-menu-first">
+    <a id="GeoBand0_select1_0" onclick="trends.PageTracker.analyticsTrackEvent('geo zoom level change', 'Region');GeoBand0_select1_linkClicked(0);"
+  
+>
+Region</a>
+</span>
+<span class="horizontal-link-menu-item">
+    <a id="GeoBand0_select1_1" onclick="trends.PageTracker.analyticsTrackEvent('geo zoom level change', 'City');GeoBand0_select1_linkClicked(1);"
+  
+>
+City</a>
+</span>
+</div>
+<script type="text/javascript">
+  GeoBand0_select1_init();
+</script>
+</div>
+  <div id="trendsReportHeatMap0" class="trendsReportHeatMapContainer">
+    <div class="geo-breadcrumb">
+  </div>
+<div id="GEO_MAP_ANIMATION_0_map" class="trendsReportHeatMap"></div>
+
+<script type="text/javascript">
+    var geoMapCodeOverrides = {};
+  </script>
+<script type="text/javascript">
+  var gvizGeoMap_GEO_MAP_ANIMATION_0 = new trends.MultiSegmentMap(
+      {"country":{"gvizData":[["regionCode","name","Search volume index"],["AU","Australia",100],["US","United States",99],["SG","Singapore",79],["NZ","New Zealand",72],["CA","Canada",69],["GB","United Kingdom",66],["NO","Norway",62],["SE","Sweden",52],["DK","Denmark",52],["ZA","South Africa",49],["IE","Ireland",47],["CH","Switzerland",44],["PH","Philippines",42],["AE","United Arab Emirates",36],["HK","Hong Kong",33],["NG","Nigeria",28],["MY","Malaysia",24],["ES","Spain",24],["IN","India",23],["PK","Pakistan",21],["KR","South Korea",12],["NL","Netherlands",11],["FI","Finland",11],["IL","Israel",10],["GR","Greece",10],["DE","Germany",9],["BE","Belgium",9],["AT","Austria",8],["RO","Romania",8],["TW","Taiwan",8],["PT","Portugal",8],["TH","Thailand",7],["SA","Saudi Arabia",6],["ID","Indonesia",6],["PL","Poland",6],["FR","France",6],["TR","Turkey",5],["IT","Italy",5],["MX","Mexico",4],["CN","China",4],["JP","Japan",3],["BR","Brazil",3],["AR","Argentina",3],["AD","Andorra",0],["AF","Afghanistan",0],["AG","Antigua \u0026 Barbuda",0],["AI","Anguilla",0],["AL","Albania",0],["AM","Armenia",0],["AO","Angola",0],["AQ","Antarctica",0],["AS","American Samoa",0],["AW","Aruba",0],["AX","Åland Islands",0],["AZ","Azerbaijan",0],["BA","Bosnia \u0026 Herzegovina",0],["BB","Barbados",0],["BD","Bangladesh",0],["BF","Burkina Faso",0],["BG","Bulgaria",0],["BH","Bahrain",0],["BI","Burundi",0],["BJ","Benin",0],["BL","St. Barthélemy",0],["BM","Bermuda",0],["BN","Brunei",0],["BO","Bolivia",0],["BQ","Caribbean Netherlands",0],["BS","Bahamas",0],["BT","Bhutan",0],["BV","Bouvet Island",0],["BW","Botswana",0],["BY","Belarus",0],["BZ","Belize",0],["CC","Cocos (Keeling) Islands",0],["CD","Congo (DRC)",0],["CF","Central African Republic",0],["CG","Congo (Republic)",0],["CI","Côte d\u2019Ivoire",0],["CK","Cook Islands",0],["CL","Chile",0],["CM","Cameroon",0],["CO","Colombia",0],["CR","Costa Rica",0],["CU","Cuba",0],["CV","Cape Verde",0],["CW","Curaçao",0],["CX","Christmas Island",0],["CY","Cyprus",0],["CZ","Czech Republic",0],["DJ","Djibouti",0],["DM","Dominica",0],["DO","Dominican Republic",0],["DZ","Algeria",0],["EC","Ecuador",0],["EE","Estonia",0],["EG","Egypt",0],["EH","Western Sahara",0],["ER","Eritrea",0],["ET","Ethiopia",0],["FJ","Fiji",0],["FK","Falkland Islands (Islas Malvinas)",0],["FM","Micronesia",0],["FO","Faroe Islands",0],["GA","Gabon",0],["GD","Grenada",0],["GE","Georgia",0],["GF","French Guiana",0],["GG","Guernsey",0],["GH","Ghana",0],["GI","Gibraltar",0],["GL","Greenland",0],["GM","Gambia",0],["GN","Guinea",0],["GP","Guadeloupe",0],["GQ","Equatorial Guinea",0],["GS","South Georgia \u0026 South Sandwich Islands",0],["GT","Guatemala",0],["GU","Guam",0],["GW","Guinea-Bissau",0],["GY","Guyana",0],["HM","Heard \u0026 McDonald Islands",0],["HN","Honduras",0],["HR","Croatia",0],["HT","Haiti",0],["HU","Hungary",0],["IM","Isle of Man",0],["IO","British Indian Ocean Territory",0],["IQ","Iraq",0],["IR","Iran",0],["IS","Iceland",0],["JE","Jersey",0],["JM","Jamaica",0],["JO","Jordan",0],["KE","Kenya",0],["KG","Kyrgyzstan",0],["KH","Cambodia",0],["KI","Kiribati",0],["KM","Comoros",0],["KN","St. Kitts \u0026 Nevis",0],["KP","North Korea",0],["KW","Kuwait",0],["KY","Cayman Islands",0],["KZ","Kazakhstan",0],["LA","Laos",0],["LB","Lebanon",0],["LC","St. Lucia",0],["LI","Liechtenstein",0],["LK","Sri Lanka",0],["LR","Liberia",0],["LS","Lesotho",0],["LT","Lithuania",0],["LU","Luxembourg",0],["LV","Latvia",0],["LY","Libya",0],["MA","Morocco",0],["MC","Monaco",0],["MD","Moldova",0],["ME","Montenegro",0],["MF","St. Martin",0],["MG","Madagascar",0],["MH","Marshall Islands",0],["MK","Macedonia (FYROM)",0],["ML","Mali",0],["MM","Myanmar (Burma)",0],["MN","Mongolia",0],["MO","Macau",0],["MP","Northern Mariana Islands",0],["MQ","Martinique",0],["MR","Mauritania",0],["MS","Montserrat",0],["MT","Malta",0],["MU","Mauritius",0],["MV","Maldives",0],["MW","Malawi",0],["MZ","Mozambique",0],["NA","Namibia",0],["NC","New Caledonia",0],["NE","Niger",0],["NF","Norfolk Island",0],["NI","Nicaragua",0],["NP","Nepal",0],["NR","Nauru",0],["NU","Niue",0],["OM","Oman",0],["PA","Panama",0],["PE","Peru",0],["PF","French Polynesia",0],["PG","Papua New Guinea",0],["PM","St. Pierre \u0026 Miquelon",0],["PN","Pitcairn Islands",0],["PR","Puerto Rico",0],["PS","Palestine",0],["PW","Palau",0],["PY","Paraguay",0],["QA","Qatar",0],["RE","Réunion",0],["RS","Serbia",0],["RU","Russia",0],["RW","Rwanda",0],["SB","Solomon Islands",0],["SC","Seychelles",0],["SD","Sudan",0],["SH","St. Helena",0],["SI","Slovenia",0],["SJ","Svalbard \u0026 Jan Mayen",0],["SK","Slovakia",0],["SL","Sierra Leone",0],["SM","San Marino",0],["SN","Senegal",0],["SO","Somalia",0],["SR","Suriname",0],["SS","South Sudan",0],["ST","São Tomé \u0026 Príncipe",0],["SV","El Salvador",0],["SX","Sint Maarten",0],["SY","Syria",0],["SZ","Swaziland",0],["TC","Turks \u0026 Caicos Islands",0],["TD","Chad",0],["TF","French Southern Territories",0],["TG","Togo",0],["TJ","Tajikistan",0],["TK","Tokelau",0],["TL","Timor-Leste",0],["TM","Turkmenistan",0],["TN","Tunisia",0],["TO","Tonga",0],["TT","Trinidad \u0026 Tobago",0],["TV","Tuvalu",0],["TZ","Tanzania",0],["UA","Ukraine",0],["UG","Uganda",0],["UM","U.S. Outlying Islands",0],["UY","Uruguay",0],["UZ","Uzbekistan",0],["VA","Vatican City",0],["VC","St. Vincent \u0026 Grenadines",0],["VE","Venezuela",0],["VG","British Virgin Islands",0],["VI","U.S. Virgin Islands",0],["VN","Vietnam",0],["VU","Vanuatu",0],["WF","Wallis \u0026 Futuna",0],["WS","Samoa",0],["XK","Kosovo",0],["YE","Yemen",0],["YT","Mayotte",0],["ZM","Zambia",0],["ZW","Zimbabwe",0]],"options":{"backgroundColor":"none","forceIFrame":false,"legend":"none","width":355,"region":"world","resolution":"countries","colorAxis":{"minValue":0,"maxValue":100,"colors":["#d1e2fc","#3f85f2"]},"displayMode":"regions","height":284},"segIndex":0},"city":{"gvizData":[["lat","lng","city","Search volume index"],[40.7607793,-111.8910474,"Salt Lake City",100],[30.267153,-97.7430608,"Austin",20],[39.737567,-104.9847179,"Denver",13],[39.4699075,-0.3762881,"Valencia",13],[45.5234515,-122.6762071,"Portland",11],[37.7749295,-122.4194155,"San Francisco",10],[-27.4710107,153.0234489,"Brisbane",9],[-33.8674869,151.2069902,"Sydney",9],[47.6062095,-122.3320708,"Seattle",9],[38.8951118,-77.0363658,"Washington",8],[32.7801399,-96.8004511,"Dallas",8],[29.7601927,-95.3693896,"Houston",8],[-37.814107,144.96328,"Melbourne",8],[34.0522342,-118.2436849,"Los Angeles",8],[32.7153292,-117.1572551,"San Diego",7]],"options":{"backgroundColor":"none","forceIFrame":false,"legend":"none","width":355,"region":"world","resolution":"countries","colorAxis":{"minValue":0,"maxValue":100,"colors":["#d1e2fc","#3f85f2"]},"displayMode":"markers","height":284},"segIndex":1}}, 0,
+      '#cmpt\75q\46q\75salt\46cat\0750-71\46geo\75%25s',
+      'fetchComponent?cmpt\75q\46q\75salt\46cat\0750-71\46cid\75GEO_MAP_ANIMATION_%25s_%25s\46export\0756', 'GEO_MAP_ANIMATION_0', regionalTabPane,
+      
+        '//www.gstatic.com/charts/geochart/10'
+      );
+
+  function GEO_MAP_ANIMATION_0_updateEmbedUrlFormat(geoLevel) {
+    
+    shareControl_GEO_MAP_ANIMATION_0_share.setEmbedSnippetFormat(
+        '//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75GEO_MAP_0___GEO__\46export\0755\46w\75%d\46h\75%d'.replace(
+            '__GEO__', geoLevel));
+    
+  }
+
+  
+    var GEO_MAP_ANIMATION_0_eventHandler = gvizGeoMap_GEO_MAP_ANIMATION_0.getRegisteredEventHandler();
+    GeoBand0_0_register(
+        function(level, oldIndex, newIndex) {
+          GEO_MAP_ANIMATION_0_updateEmbedUrlFormat(newIndex);
+          GEO_MAP_ANIMATION_0_eventHandler(level, oldIndex, newIndex);
+        });
+  </script>
+
+<div id="GEO_MAP_ANIMATION_0_footer" class="geo-map-footer">
+  <div class="geo-map-share">
+          <div class="embed-icon-container" onclick="shareControl_GEO_MAP_ANIMATION_0_share.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="GEO_MAP_ANIMATION_0_share_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="GEO_MAP_ANIMATION_0_share_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_GEO_MAP_ANIMATION_0_share.update()"
+             value="500" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="GEO_MAP_ANIMATION_0_share_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_GEO_MAP_ANIMATION_0_share.update()"
+             value="530" />
+
+      <span style='display: none;'>
+        <span id="GEO_MAP_ANIMATION_0_share_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="GEO_MAP_ANIMATION_0_share_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="GEO_MAP_ANIMATION_0_share_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_GEO_MAP_ANIMATION_0_share = new trends.ShareControl(
+      "GEO_MAP_ANIMATION_0_share", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75GEO_MAP_0_0\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+    <div id="GEO_MAP_ANIMATION_0_startAnimation"
+     style="display:none;"
+     class="animation-msg">
+  <span>
+      View change over time</span>
+    <div id="GEO_MAP_ANIMATION_0AnimationTip_tip_a" class="tooltip-icon"><div class="SPRITE_help"></div></div><div id="GEO_MAP_ANIMATION_0AnimationTip_tip_c" class="tooltip-content tooltip-box"><div class="tooltip-message" id="GEO_MAP_ANIMATION_0AnimationTip_tip_msg">Click this link to see how a search term's popularity changes over time, across regions. <a href="//support.google.com/trends/bin/answer.py?hl=en-US&answer=156671">Learn more</a></div></div><script type="text/javascript">new trends.Tooltip('GEO_MAP_ANIMATION_0AnimationTip_tip_a', 'GEO_MAP_ANIMATION_0AnimationTip_tip_c',undefined,undefined);</script></div>
+<div id="GEO_MAP_ANIMATION_0_animationContent" class="animation-container">
+  <div id="GEO_MAP_ANIMATION_0_animationLoading"
+       style="display:none;"
+       class="animation-msg">
+    <img  src="/trends/resources/1964626681-loading.gif" style='vertical-align: middle;'/></div>
+  <div id="GEO_MAP_ANIMATION_0_animationTimeout"
+       style="display:none;">
+    <table class="hint " >
+  <tr>
+    <td><div class="goog-inline-block fs04img SPRITE_exclamation"
+       style=''
+       ></div></td><td><p><span class="animation-error">
+        This seems to be taking too long. Click <a onclick="return gvizGeoMap_GEO_MAP_ANIMATION_0.loadAnimation();">here</a> to retry.</span>
+    </p></td>
+  </tr>
+</table>
+</div>
+  <div id="GEO_MAP_ANIMATION_0_animationError"
+       style="display:none;">
+    <table class="hint " >
+  <tr>
+    <td><div class="goog-inline-block fs04img SPRITE_exclamation"
+       style=''
+       ></div></td><td><p><span class="animation-error">%s</span>
+    </p></td>
+  </tr>
+</table>
+</div>
+  <div id="GEO_MAP_ANIMATION_0_animationButtons"
+       style="display:none;">
+    <div class="animation-control">
+      <div id="GEO_MAP_ANIMATION_0_play_pause_div" class="animation-playpause">
+        <span id="GEO_MAP_ANIMATION_0_animationPause" style="display: none;">
+          <a onclick="return gvizGeoMap_GEO_MAP_ANIMATION_0.pauseAnimation();">
+            <img id="GEO_MAP_ANIMATION_0_pause_image"  src="/trends/resources/3111801320-pause.gif"/><img id="GEO_MAP_ANIMATION_0_pause_over_image"  src="/trends/resources/3502354573-pause_over.gif"/></a>
+        </span>
+        <span id="GEO_MAP_ANIMATION_0_animationPlay">
+          <a onclick="return gvizGeoMap_GEO_MAP_ANIMATION_0.playAnimation(10);">
+            <img id="GEO_MAP_ANIMATION_0_play_image"  src="/trends/resources/3035707513-play.gif"/><img id="GEO_MAP_ANIMATION_0_play_over_image"  src="/trends/resources/1620550102-play_over.gif"/></a>
+        </span>
+      </div>
+      <div id="GEO_MAP_ANIMATION_0_animationSlider" class="goog-slider animation-slider">
+        <div class="goog-slider-scale"></div>
+        <div class="goog-slider-thumb"></div>
+      </div>
+      <div class="animation-time">
+        <span id="GEO_MAP_ANIMATION_0_animationTime"></span>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div id="GEO_MAP_ANIMATION_0_caption" class="heatMapCaption"></div>
+<div id="GEO_MAP_ANIMATION_0_error" class="heatMapError" style="display:none;"></div>
+
+</div>
+  <div id="trendsReportTopLocations0"
+       class="trendsReportTopLocations">
+    <script type="text/javascript">
+
+  var GEO_TABLE_0_selected = 0;
+
+  function GEO_TABLE_0_SwitchCommon(level, newindex) {
+    var oldDivId =
+        "GEO_TABLE" + "_" + GEO_TABLE_0_selected + "_" + 0;
+    GEO_TABLE_0_selected = newindex;
+    var newDivId =
+        "GEO_TABLE" + "_" + GEO_TABLE_0_selected + "_" + 0;
+    document.getElementById(oldDivId).style.display = "none";
+    document.getElementById(newDivId).style.display = "";
+  }
+
+  function GEO_TABLE_0_Level1Switch(oldindex, newindex) {
+    GEO_TABLE_SwitchCommon(1, newindex);
+  }
+
+  GeoBand0_0_register(
+        function(level, oldIndex, newIndex) {
+          GEO_TABLE_0_SwitchCommon(level, newIndex);
+        }
+    );
+  </script>
+
+<div id="GEO_TABLE_0_0"
+         style="">
+      <div class="scrollable-container">
+      <div class="jfkScrollable">
+        <div class="jfkScrollable-inner">
+      <div id="COUNTRY_Table_0table" class="trends-table">
+            <table class="trends-table-data" cellpadding="0" cellspacing="0">
+            <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-first">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=AU" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+Australia</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-first">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      100</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #d04108; width: 100.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=US" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+United States</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      99</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #d04108; width: 99.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=SG" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+Singapore</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      79</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #db601e; width: 79.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=NZ" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+New Zealand</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      72</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #db601e; width: 72.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=CA" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+Canada</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      69</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #db601e; width: 69.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=GB" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+United Kingdom</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      66</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #db601e; width: 66.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=NO" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+Norway</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      62</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #db601e; width: 62.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=SE" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+Sweden</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      52</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #e68033; width: 52.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=DK" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+Denmark</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      52</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #e68033; width: 52.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-last">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=salt&cat=0-71&geo=ZA" onclick="trends.PageTracker.analyticsTrackEvent('top locations drilldown');"
+  
+>
+South Africa</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-last">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      49</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #e68033; width: 49.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              </table> </div> </div> </div> </div>
+  <script type="text/javascript">
+    trends.Utils.installScrollableRegion();
+  </script>
+  <div class="searches-share">
+        <div class="embed-icon-container" onclick="shareControl_GEO_TABLE_0_0.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="GEO_TABLE_0_0_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="GEO_TABLE_0_0_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_GEO_TABLE_0_0.update()"
+             value="500" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="GEO_TABLE_0_0_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_GEO_TABLE_0_0.update()"
+             value="330" />
+
+      <span style='display: none;'>
+        <span id="GEO_TABLE_0_0_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="GEO_TABLE_0_0_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="GEO_TABLE_0_0_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_GEO_TABLE_0_0 = new trends.ShareControl(
+      "GEO_TABLE_0_0", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75GEO_TABLE_0_0\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+  </div>
+<div id="GEO_TABLE_1_0"
+         style="display:none;">
+      <div class="scrollable-container">
+      <div class="jfkScrollable">
+        <div class="jfkScrollable-inner">
+      <div id="CITY_Table_0table" class="trends-table">
+            <table class="trends-table-data" cellpadding="0" cellspacing="0">
+            <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-first">
+                  <span class="trends-bar-chart-name">
+                    Salt Lake City</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-first">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      100</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #d04108; width: 100.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    Austin</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      20</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #f0a049; width: 20.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    Denver</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      13</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 13.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    Valencia</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      13</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 13.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    Portland</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      11</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 11.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    San Francisco</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      10</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 10.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    Brisbane</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      9</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 9.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    Sydney</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      9</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 9.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    Seattle</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      9</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 9.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-last">
+                  <span class="trends-bar-chart-name">
+                    Washington</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-last">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      8</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 8.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              </table> </div> </div> </div> </div>
+  <script type="text/javascript">
+    trends.Utils.installScrollableRegion();
+  </script>
+  <div class="searches-share">
+        <div class="embed-icon-container" onclick="shareControl_GEO_TABLE_0_1.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="GEO_TABLE_0_1_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="GEO_TABLE_0_1_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_GEO_TABLE_0_1.update()"
+             value="500" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="GEO_TABLE_0_1_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_GEO_TABLE_0_1.update()"
+             value="330" />
+
+      <span style='display: none;'>
+        <span id="GEO_TABLE_0_1_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="GEO_TABLE_0_1_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="GEO_TABLE_0_1_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_GEO_TABLE_0_1 = new trends.ShareControl(
+      "GEO_TABLE_0_1", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75GEO_TABLE_0_1\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+  </div>
+</div>
+
+  </div>
+</div>
+          </div>
+      </div>
+    <div id="relatedTabPane"></div>
+    <div class="trendsReportBottomArea">
+      <div class="single-tab-container">
+        <div id="relatedTabPage0">
+            <div class="with-related-topics">
+  <div class="searchesSection">
+    <div class="trendsReportSearchBandTitleContainer">
+      <div class="trendsReportSearchBandTitle">
+        <span class="title-content">Related searches</span>
+        <div class="searchBandTooltip trendsBandTooltip">
+          <div id="SearchBand0_0_tip_a" class="tooltip-icon"><div class="SPRITE_help"></div></div><div id="SearchBand0_0_tip_c" class="tooltip-content tooltip-box"><div class="tooltip-message" id="SearchBand0_0_tip_msg">People whose searches match the restrictions most often searched for these topics and terms too. <a href="//support.google.com/trends/bin/answer.py?hl=en-US&answer=99742">Learn more </a></div></div><script type="text/javascript">new trends.Tooltip('SearchBand0_0_tip_a', 'SearchBand0_0_tip_c',undefined,undefined);</script></div>
+      </div>
+    </div>
+    <div class="trendsReportTopRisingSection">
+  <h2 class="trendsReportTopRisingTitle">
+<table cellpadding="0" cellspacing="0" style="width: 100%; white-space:nowrap;">
+  <tr>
+<td class="searchTermsTitle">
+      Topics</td>
+<td style="text-align: right;">
+      <div id="searchBandTabControlt0"
+             class="trends-tab-control search-band-tab-control"></div>
+        <div id="searchBandTabControlTopButtont0">
+          Top</div>
+        <div id="searchBandTabControlRisingButtont0">
+          Rising</div>
+      </td>
+  </tr>
+</table>
+</h2>
+<div id="trendsReportTopTopicsDiv0"
+       class="trendsReportTopSearchesDiv verticalMargin">
+    <table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td>
+<div class="elementInCompositeTall"
+           id="TOP_ENTITIES_0_0">
+        <div class="scrollable-container">
+      <div class="jfkScrollable">
+        <div class="jfkScrollable-inner">
+      <div id="TOP_ENTITIES_0_0table" class="trends-table">
+            <table class="trends-table-data" cellpadding="0" cellspacing="0">
+            <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-first">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F05g0_z&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+Table salt - Food</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-first">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      100</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #d04108; width: 100.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F01hm70&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+Sea salt - Ingredient</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      15</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 15.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F0f2r6&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+Salt Lake City - City in Utah</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      15</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 15.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F0jtt9&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+Chili pepper - Peppers</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      10</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 10.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F05r733&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+Kosher salt - Ingredient</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      5</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 5.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F020z888&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+The Salt Lick - Restaurant</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      5</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 5.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F06n2_3&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+Salt water taffy - Dish</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      5</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 5.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F01ltyh&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+Seawater - Literature Subject</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      5</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 5.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-last">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F05pbl56&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+Salt - 2010 film</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-last">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      5</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 5.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              </table> </div> </div> </div> </div>
+  <script type="text/javascript">
+    trends.Utils.installScrollableRegion();
+  </script>
+  <div class="searches-share">
+        <div class="embed-icon-container" onclick="shareControl_TOP_ENTITIES_0_0.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="TOP_ENTITIES_0_0_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="TOP_ENTITIES_0_0_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_TOP_ENTITIES_0_0.update()"
+             value="300" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="TOP_ENTITIES_0_0_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_TOP_ENTITIES_0_0.update()"
+             value="420" />
+
+      <span style='display: none;'>
+        <span id="TOP_ENTITIES_0_0_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="TOP_ENTITIES_0_0_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="TOP_ENTITIES_0_0_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_TOP_ENTITIES_0_0 = new trends.ShareControl(
+      "TOP_ENTITIES_0_0", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75TOP_ENTITIES_0_0\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+  </div>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  
+  var TOP_ENTITIES0_controller =
+      new trends.SearchesCompositeTables(
+          'TOP_ENTITIES',
+          0,
+          2,
+          0,
+          0,
+          true,
+          'hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc%2FGMT%2B5\46tz\75Etc%2FGMT%2B5\46content\0751',
+          -1,
+          [],
+          false,
+          relatedTabPane,
+          false);
+</script>
+
+</div>
+  <div id="trendsReportRisingTopics0"
+           class="trendsReportRisingSearches verticalMargin"
+           style="display: none;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td>
+<div class="elementInCompositeTall"
+           id="RISING_ENTITIES_0_0">
+        <div class="scrollable-container">
+      <div class="jfkScrollable">
+        <div class="jfkScrollable-inner">
+      <div id="RISING_ENTITIES_0_0table" class="trends-table">
+            <table class="trends-table-data" cellpadding="0" cellspacing="0">
+            <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-first">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F03qjy4s&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+Himalayan salt - Ingredient</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-first">
+                  Breakout
+</td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F05pbl56&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+Salt - 2010 film</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  Breakout
+</td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F066sg&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+Potato chip - Snack</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  +90%
+</td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F0jtt9&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+Chili pepper - Peppers</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  +60%
+</td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-last">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%2Fm%2F01hm70&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+Sea salt - Ingredient</a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-last">
+                  +50%
+</td>
+              </tr>
+              </table> </div> </div> </div> </div>
+  <script type="text/javascript">
+    trends.Utils.installScrollableRegion();
+  </script>
+  <div class="searches-share">
+        <div class="embed-icon-container" onclick="shareControl_RISING_ENTITIES_0_0.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="RISING_ENTITIES_0_0_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="RISING_ENTITIES_0_0_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_RISING_ENTITIES_0_0.update()"
+             value="300" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="RISING_ENTITIES_0_0_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_RISING_ENTITIES_0_0.update()"
+             value="420" />
+
+      <span style='display: none;'>
+        <span id="RISING_ENTITIES_0_0_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="RISING_ENTITIES_0_0_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="RISING_ENTITIES_0_0_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_RISING_ENTITIES_0_0 = new trends.ShareControl(
+      "RISING_ENTITIES_0_0", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75RISING_ENTITIES_0_0\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+  </div>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  
+  var RISING_ENTITIES0_controller =
+      new trends.SearchesCompositeTables(
+          'RISING_ENTITIES',
+          0,
+          2,
+          0,
+          0,
+          true,
+          'hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc%2FGMT%2B5\46tz\75Etc%2FGMT%2B5\46content\0751',
+          -1,
+          [],
+          false,
+          relatedTabPane,
+          false);
+</script>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    new trends.TabControl('searchBandTabControlt0', [
+        new trends.TabControl.TabData(
+            ['trendsReportTopTopicsDiv0'],
+            'searchBandTabControlTopButtont0',
+            undefined),
+        new trends.TabControl.TabData(
+            ['trendsReportRisingTopics0'],
+            'searchBandTabControlRisingButtont0',
+            undefined)]);
+  </script>
+<div class="trendsReportMiddleBreak"></div>
+    <div class="trendsReportTopRisingSectionRight">
+      <div class="trendsReportTopRisingSection">
+  <h2 class="trendsReportTopRisingTitle">
+<table cellpadding="0" cellspacing="0" style="width: 100%; white-space:nowrap;">
+  <tr>
+<td class="searchTermsTitle">
+      Queries</td>
+<td style="text-align: right;">
+      <div id="searchBandTabControlq0"
+             class="trends-tab-control search-band-tab-control"></div>
+        <div id="searchBandTabControlTopButtonq0">
+          Top</div>
+        <div id="searchBandTabControlRisingButtonq0">
+          Rising</div>
+      </td>
+  </tr>
+</table>
+</h2>
+<div id="trendsReportTopQueriesDiv0"
+       class="trendsReportTopSearchesDiv verticalMargin">
+    <table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td>
+<div class="elementInCompositeTall"
+           id="TOP_QUERIES_0_0">
+        <div class="scrollable-container">
+      <div class="jfkScrollable">
+        <div class="jfkScrollable-inner">
+      <div id="TOP_QUERIES_0_0table" class="trends-table">
+            <table class="trends-table-data" cellpadding="0" cellspacing="0">
+            <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-first">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22sea+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+sea salt</a>
+<a href="http://www.google.com/search?q=sea+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'sea salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-first">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      100</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #d04108; width: 100.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+city%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+salt city</a>
+<a href="http://www.google.com/search?q=salt+city" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'salt city');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      55</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #e68033; width: 55.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+lake+city%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+salt lake city</a>
+<a href="http://www.google.com/search?q=salt+lake+city" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'salt lake city');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      50</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #e68033; width: 50.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22the+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+the salt</a>
+<a href="http://www.google.com/search?q=the+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'the salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      50</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #e68033; width: 50.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+and+pepper%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+salt and pepper</a>
+<a href="http://www.google.com/search?q=salt+and+pepper" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'salt and pepper');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      45</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #e68033; width: 45.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22kosher+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+kosher salt</a>
+<a href="http://www.google.com/search?q=kosher+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'kosher salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      35</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #f0a049; width: 35.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+restaurant%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+salt restaurant</a>
+<a href="http://www.google.com/search?q=salt+restaurant" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'salt restaurant');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      35</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #f0a049; width: 35.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22rock+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+rock salt</a>
+<a href="http://www.google.com/search?q=rock+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'rock salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      25</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #f0a049; width: 25.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22black+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+black salt</a>
+<a href="http://www.google.com/search?q=black+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'black salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      15</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 15.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-last">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22table+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown');"
+  
+>
+table salt</a>
+<a href="http://www.google.com/search?q=table+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('top keywords drilldown g link', 'table salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-last">
+                  <div class="trends-hbars-barscell">
+    <div class="trends-hbars-value">
+      15</div>
+    <div class="trends-hbars-bar">
+      <div class="continuous-hotness-scale hotness-scale"><div class="continuous-hotness-scale-background"></div><div class="continuous-hotness-scale-filling" style="background-color: #feca65; width: 15.0%"></div></div></div>
+  </div>
+  </td>
+              </tr>
+              </table> </div> </div> </div> </div>
+  <script type="text/javascript">
+    trends.Utils.installScrollableRegion();
+  </script>
+  <div class="searches-share">
+        <div class="embed-icon-container" onclick="shareControl_TOP_QUERIES_0_0.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="TOP_QUERIES_0_0_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="TOP_QUERIES_0_0_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_TOP_QUERIES_0_0.update()"
+             value="300" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="TOP_QUERIES_0_0_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_TOP_QUERIES_0_0.update()"
+             value="420" />
+
+      <span style='display: none;'>
+        <span id="TOP_QUERIES_0_0_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="TOP_QUERIES_0_0_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="TOP_QUERIES_0_0_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_TOP_QUERIES_0_0 = new trends.ShareControl(
+      "TOP_QUERIES_0_0", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75TOP_QUERIES_0_0\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+  </div>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  
+  var TOP_QUERIES0_controller =
+      new trends.SearchesCompositeTables(
+          'TOP_QUERIES',
+          0,
+          2,
+          0,
+          0,
+          true,
+          'hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc%2FGMT%2B5\46tz\75Etc%2FGMT%2B5\46content\0751',
+          -1,
+          [],
+          false,
+          relatedTabPane,
+          false);
+</script>
+
+</div>
+  <div id="trendsReportRisingQueries0"
+           class="trendsReportRisingSearches verticalMargin"
+           style="display: none;">
+    <table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td>
+<div class="elementInCompositeTall"
+           id="RISING_QUERIES_0_0">
+        <div class="scrollable-container">
+      <div class="jfkScrollable">
+        <div class="jfkScrollable-inner">
+      <div id="RISING_QUERIES_0_0table" class="trends-table">
+            <table class="trends-table-data" cellpadding="0" cellspacing="0">
+            <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-first">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22pink+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+pink salt</a>
+<a href="http://www.google.com/search?q=pink+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'pink salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-first">
+                  Breakout
+</td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+2%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+salt 2</a>
+<a href="http://www.google.com/search?q=salt+2" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'salt 2');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  Breakout
+</td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+life%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+salt life</a>
+<a href="http://www.google.com/search?q=salt+life" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'salt life');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  Breakout
+</td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22black+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+black salt</a>
+<a href="http://www.google.com/search?q=black+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'black salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  +170%
+</td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22garlic+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+garlic salt</a>
+<a href="http://www.google.com/search?q=garlic+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'garlic salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  +130%
+</td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+and+vinegar%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+salt and vinegar</a>
+<a href="http://www.google.com/search?q=salt+and+vinegar" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'salt and vinegar');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  +110%
+</td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+and+pepper%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+salt and pepper</a>
+<a href="http://www.google.com/search?q=salt+and+pepper" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'salt and pepper');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  +100%
+</td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+house%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+salt house</a>
+<a href="http://www.google.com/search?q=salt+house" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'salt house');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  +70%
+</td>
+              </tr>
+              <tr class="trends-table-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22sea+salt%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+sea salt</a>
+<a href="http://www.google.com/search?q=sea+salt" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'sea salt');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row">
+                  +60%
+</td>
+              </tr>
+              <tr class="trends-table-row trends-table-alt-row ">
+                <td class="trends-bar-chart-name-cell trends-bar-chart-row-last">
+                  <span class="trends-bar-chart-name">
+                    <a href="#cmpt=q&q=%22salt+substitute%22&cat=0-71" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown');"
+  
+>
+salt substitute</a>
+<a href="http://www.google.com/search?q=salt+substitute" class="google-link" target="_blank" onclick="trends.PageTracker.analyticsTrackEvent('rising drilldown g link', 'salt substitute');"
+  
+>
+<div class=
+                                    "trends-bar-chart-google-link-image
+                                     SPRITE_search">
+                                </div>
+                              </a>
+</span>
+                </td>
+                <td class="trends-bar-chart-value-cell trends-bar-chart-row-last">
+                  +50%
+</td>
+              </tr>
+              </table> </div> </div> </div> </div>
+  <script type="text/javascript">
+    trends.Utils.installScrollableRegion();
+  </script>
+  <div class="searches-share">
+        <div class="embed-icon-container" onclick="shareControl_RISING_QUERIES_0_0.show()">
+    <div class="embed-icon-img SPRITE_embed_icon"></div>
+  </div>
+<div id="RISING_QUERIES_0_0_d" style="display: none">
+  <div class="modal-dialog-title">
+    Embed chart</div>
+    <div class="embed-dialog-param-line">
+      <span class="embed-dialog-param-line-caption">
+        Width</span>
+      <input id="RISING_QUERIES_0_0_width" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_RISING_QUERIES_0_0.update()"
+             value="300" />
+      <span class="embed-dialog-param-line-caption">
+        Height</span>
+      <input id="RISING_QUERIES_0_0_height" class="jfk-textinput embed-dialog-textinput"
+             onchange="shareControl_RISING_QUERIES_0_0.update()"
+             value="420" />
+
+      <span style='display: none;'>
+        <span id="RISING_QUERIES_0_0_alternative_format_checkbox"
+              class="embed-dialog-param-line-checkbox">
+        </span>
+        <span id="RISING_QUERIES_0_0_alternative_format_label"
+              class="embed-dialog-param-line-caption">
+          </span>
+      </span>
+    </div>
+
+  <div class="modal-dialog-content">
+    <div class="embed-dialog-message">
+      Paste this into any HTML page:</div>
+    <textarea id="RISING_QUERIES_0_0_content" class="embed-script-container"
+              onclick="this.focus();this.select();"
+              readonly="readonly"></textarea>
+  </div>
+</div>
+
+<script type="text/javascript">
+  var shareControl_RISING_QUERIES_0_0 = new trends.ShareControl(
+      "RISING_QUERIES_0_0", "//www.google.com/trends/embed.js?hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc/GMT%2B5\46tz\75Etc/GMT%2B5\46content\0751\46cid\75RISING_QUERIES_0_0\46export\0755\46w\75%d\46h\75%d"
+      
+      );
+</script>
+</div>
+  </div>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  
+  var RISING_QUERIES0_controller =
+      new trends.SearchesCompositeTables(
+          'RISING_QUERIES',
+          0,
+          2,
+          0,
+          0,
+          true,
+          'hl\75en-US\46cat\0750-71\46q\75salt\46cmpt\75q\46tz\75Etc%2FGMT%2B5\46tz\75Etc%2FGMT%2B5\46content\0751',
+          -1,
+          [],
+          false,
+          relatedTabPane,
+          false);
+</script>
+
+</div>
+</div>
+
+<script type="text/javascript">
+    new trends.TabControl('searchBandTabControlq0', [
+        new trends.TabControl.TabData(
+            ['trendsReportTopQueriesDiv0'],
+            'searchBandTabControlTopButtonq0',
+            undefined),
+        new trends.TabControl.TabData(
+            ['trendsReportRisingQueries0'],
+            'searchBandTabControlRisingButtonq0',
+            undefined)]);
+  </script>
+</div>
+    </div>
+</div>
+</div>
+        </div>
+    </div>
+  </div>
+  </div>
+
+  <script type="text/javascript">
+  if (typeof _gat != 'undefined') {
+    trends.PageTracker.init(_gat._getTracker('UA-4401283-1'),
+        '/trends/');
+
+    
+    trends.PageTracker.trackLoggedIn(true);
+
+    trends.PageTracker.trackSoph('categ');
+      trends.PageTracker.trackSrch('', 'web search');
+
+    
+    trends.PageTracker.trackPageView();
+  }
+</script>
+<script type="text/javascript">
+  controlPanel.updatePickerTimeZone(
+      'GMT-5', '20151111', '20151117');
+</script>
